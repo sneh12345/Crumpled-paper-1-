@@ -52,7 +52,7 @@ function draw() {
 
 
 function keyPressed (){
-if(keyCode === 32){
+if(keyCode === 38){
 
 Matter.Body.applyForce(paperObject.body, paperObject.body.position,{x:23,y:-23});
 
