@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -12,12 +11,13 @@ function setup() {
 	world = engine.world;
 	boxlside = new Box(700,550,150,15);
 	boxrside = new Box(770,500,15,100);
-	boxdside = new Box(630,500,15,100);
-	
+	boxdside = new Box(630,500,15, 100);
+  paperObject = new Paper(100,300,24);
+  
   ground = new Ground(500,560,10000,10);
 
-  paperObject = new Paper(100,530,24,10);
 
+   
 	
 	
 	
@@ -27,18 +27,22 @@ function setup() {
 	Engine.run(engine);
 }
 
+function preload(){
+ 
+ 
+
+
+
+}
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(234);
   boxlside.display();
   boxrside.display();
   boxdside.display();
   ground.display();
   paperObject.display();
- 
-
- 
  
 
   
